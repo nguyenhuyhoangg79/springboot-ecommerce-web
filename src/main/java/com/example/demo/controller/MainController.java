@@ -36,7 +36,6 @@ public class MainController {
 		System.out.println("Hello" + productId.toString());
 //        PersonForm personForm = new PersonForm();
 //        model.addAttribute("personForm", personForm);
-
 		return "cart";
 	}
 
