@@ -183,11 +183,9 @@
 									<a href="single-product.html" th:utext="${product.productName}">...</a>
 								</h2>
 								<div class="product-carousel-price">
-									<ins>
-										$ <span
-											th:text="${#numbers.formatDecimal(product.productPrice, 0, 'COMMA', 2, 'POINT')}">...</span>
-									</ins>
-
+									<ins th:text="'$' + ${product.productPrice}">...</ins>
+									<del th:text="'$' + ${product.productOldPrice}">...</del>
+									<!-- 										th:text="'$' + ${#numbers.formatDecimal(product.productPrice, 0, 'COMMA', 2, 'POINT')}">...</span> -->
 									<!-- 									<span -->
 									<!-- 										th:text="${#numbers.formatDecimal(product.productOldPrice, 0, 'COMMA', 2, 'POINT')}">...</span> -->
 
